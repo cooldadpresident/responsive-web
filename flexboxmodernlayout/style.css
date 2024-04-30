@@ -1,0 +1,36 @@
+#flexbox {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+}
+
+#flexbox div {
+  background-color: #8f4242;
+}
+
+@media screen and (max-width: 700px) {
+  #obsah {
+    order: -1;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.container > div {
+  background: #b3deff;
+}
+
+.item1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.item2 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
